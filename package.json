@@ -1,0 +1,28 @@
+{
+  "name": "typeorm-duplicate-key-issue",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "engines": {
+    "node": ">=11.0.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "build": "tsc --build tsconfig.json",
+    "start": "cd dist/ && node --experimental-modules index.js && cd ..",
+    "dev": "yarn clean && yarn build && yarn start"
+  },
+  "dependencies": {
+    "pg": "^8.2.1",
+    "typeorm": "^0.2.25"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.5",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.1",
+    "typescript": "3.7"
+  }
+}

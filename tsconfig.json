@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./src/*",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "incremental": true,
+    "module": "commonjs",
+    "outDir": "./dist/",
+    "removeComments": true,
+    "sourceMap": false,
+    "target": "es2015",
+  },
+  "exclude": ["node_modules", "dist"]
+}
